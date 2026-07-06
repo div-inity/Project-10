@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "font500";
+  src: url("../fonts/Avenir Next World Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "font600";
+  src: url("../fonts/Avenir Next World Demi.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "font700";
+  src: url("../fonts/Avenir Next World Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "font900";
+  src: url("../fonts/Avenir Next World Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  --font-family: "font500", sans-serif;
+  --accent1: #4abcec;
+  --accent2: #08b1b9;
+}
+
+@import "blocks/_header.scss";
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+  background: #f6f4ec;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 1s all;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: black !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.light {
+  color: #f6f4ec;
+}
+
+.dark {
+  color: var(--primary-accent);
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.ad {
+  background-color: var(--primary-accent);
+  color: #f1d3b9;
+  font-size: 0.85rem;
+  line-height: 160%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-open {
+  background-color: var(--secondary);
+  border-radius: 50px;
+  border: unset;
+  height: 50px;
+  aspect-ratio: 1/1;
+  position: fixed;
+  right: -20px;
+  top: 45%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  img {
+    object-fit: contain;
+    height: 60%;
+    width: 60%;
+  }
+}
+
+aside {
+  background-color: var(--light-color);
+  transform: translateX(-100%);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  overflow: hidden;
+
+  .aside-close {
+    background-color: var(--secondary);
+    border-radius: 50px;
+    border: unset;
+    height: 50px;
+    aspect-ratio: 1/1;
+    position: fixed;
+    right: -20px;
+    top: 45%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+
+    img {
+      object-fit: contain;
+      height: 60%;
+      width: 60%;
+    }
+  }
+
+  .aside-menu {
+    ul {
+      row-gap: 15px;
+      font-size: 27px;
+      margin-top: 30px;
+      align-items: center;
+    }
+  }
+
+  .aside-actions {
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+      font-size: 27px;
+
+    }
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  &.openned {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    max-width: 800px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    max-width: 700px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  html {
+    font-size: 18px;
+  }
+
+  .header-container {
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .aside-open {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 300px;
+  }
+}
