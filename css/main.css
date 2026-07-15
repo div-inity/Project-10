@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "font500";
   src: url("../fonts/Avenir Next World Medium.ttf") format("truetype");
@@ -22,16 +23,32 @@
   font-style: normal;
   font-display: swap;
 }
-
-
 :root {
   --font-family: "font500", sans-serif;
   --accent1: #4abcec;
   --accent2: #08b1b9;
 }
 
-@import "blocks/_header.scss";
-
+header {
+  margin-top: 46px;
+}
+header .header__content {
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__content .phone {
+  font-family: var(--font-family);
+  font-size: 18px;
+  margin-right: 5px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+header .header__content .phone a {
+  line-height: 1;
+}
+header .header__content .phone span {
+  padding-bottom: 19px;
+}
 
 html {
   /* scroll-behavior: smooth; */
@@ -67,12 +84,12 @@ a {
 
 .flex {
   display: flex;
-  .row {
-    flex-direction: row;
-  }
-  .column {
-    flex-direction: column;
-  }
+}
+.flex .row {
+  flex-direction: row;
+}
+.flex .column {
+  flex-direction: column;
 }
 
 .background-hero {
@@ -83,4 +100,4 @@ a {
   height: 100vh;
   width: 100%;
   z-index: -1;
-}
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+header {
+  margin-top: 46px;
+  .header__content {
+    align-items: center;
+    justify-content: space-between;
+    .phone {
+      font-family: var(--font-family);
+      font-size: 18px;
+      margin-right: 5px;
+      column-gap: 8px;
+      a {
+        line-height: 1;
+      }
+      span {
+        padding-bottom: 19px;
+      }
+    }
+  }
+}
