@@ -31,6 +31,7 @@
 }
 
 @import "blocks/_header.scss";
+@import "blocks/_hero.scss";
 
 
 html {
@@ -58,7 +59,18 @@ html {
 }
 
 button {
+  font-family: var(--font-family);
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
   cursor: pointer;
+  height: 60px;
+  border-radius: 9px;
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+  padding-inline: 36px;
 }
 
 a {

@@ -1,0 +1,52 @@
+.hero {
+  margin-top: 7rem;
+  .hero_block {
+    h1 {
+      font-size: 18px;
+      color: #747d81;
+      span {
+        display: block;
+        font-size: 108px;
+        background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1.12;
+      }
+    }
+    & > p {
+      font-size: 18px;
+      width: 49%;
+      line-height: 1.3;
+      margin-top: 0.5rem;
+    }
+    .guarantee {
+      margin-top: 4.1rem;
+      column-gap: 37px;
+      .left {
+        background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
+        border-radius: 12px;
+        width: 71px;
+        height: 71px;
+        background-image: url(../../img/Rectangle2.svg);
+        align-items: center;
+        justify-content: center;
+      }
+      .right {
+        width: 40%;
+        h2 {
+          font-size: 18px;
+          letter-spacing: 0.5px;
+        }
+        p {
+          color: #00e0ff;
+          line-height: 128%;
+          font-size: 18px;
+        }
+      }
+    }
+    button {
+      margin-top: 5.53rem;
+    }
+  }
+}
