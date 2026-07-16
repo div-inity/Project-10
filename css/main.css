@@ -39,7 +39,6 @@ header .header__content {
 header .header__content .phone {
   font-family: var(--font-family);
   font-size: 18px;
-  margin-right: 5px;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
@@ -48,7 +47,7 @@ header .header__content .phone span {
 }
 
 .hero {
-  margin-top: 7rem;
+  margin-top: -17px;
 }
 .hero .hero_block h1 {
   font-size: 18px;
@@ -71,8 +70,8 @@ header .header__content .phone span {
 }
 .hero .hero_block .guarantee {
   margin-top: 4.1rem;
-  -moz-column-gap: 37px;
-       column-gap: 37px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 .hero .hero_block .guarantee .left {
   background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
@@ -112,7 +111,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: 1s all;
+  /* transition: 1s all; */
   font-family: var(--font-family);
   font-weight: 400;
   color: #fff;
@@ -120,7 +119,7 @@ html {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1190px;
 }
 
 button {
@@ -160,4 +159,62 @@ a {
   height: 100vh;
   width: 100%;
   z-index: -1;
+}
+
+.popup {
+  align-items: center;
+  position: sticky;
+  left: 100px;
+  top: 145px;
+  width: 139px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.popup .pulse1 {
+  height: 139px;
+  width: 139px;
+  background-color: #11484F;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite ease-in-out;
+}
+.popup .pulse1 .pulse2 {
+  background-color: #0FC6C5;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/icons8_headset\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: pulse 1s infinite ease-in-out;
+}
+.popup p {
+  transform: rotate(-90deg);
+  font-family: "font500";
+  font-size: 9px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #00e0ff;
+  white-space: nowrap;
+  position: relative;
+  top: 126px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
