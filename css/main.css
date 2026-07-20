@@ -219,6 +219,61 @@ header .header__content .phone span {
   margin-top: 3.55rem;
 }
 
+.important {
+  padding-top: 5.4rem;
+  background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.7%, rgba(12, 55, 61, 0.8) 91.57%);
+  padding-bottom: 6.45rem;
+}
+.important .important-items {
+  margin-top: 2.4rem;
+  row-gap: 46px;
+}
+.important .important-items .string1 {
+  width: 100%;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+}
+.important .important-items .string1 figure {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+.important .important-items .string1 figure:nth-of-type(2) {
+  padding-right: 93px;
+}
+.important .important-items .string2 {
+  width: 100%;
+  -moz-column-gap: 74px;
+       column-gap: 74px;
+  justify-content: end;
+  padding-left: 49px;
+}
+.important .important-items .string2 figure {
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+}
+.important .important-items .string2 figure:nth-of-type(1) {
+  width: 124%;
+}
+.important .important-items .string2 figure:nth-of-type(2) {
+  width: 122%;
+}
+.important .important-items .string2 figure figcaption:nth-of-type(1) {
+  width: 41%;
+}
+.important .important-items .string2 figure figcaption:nth-of-type(2) {
+  width: 38%;
+}
+.important .important-items img {
+  align-self: baseline;
+}
+.important .important-items figcaption {
+  font-size: 16px;
+  line-height: 144%;
+}
+
 html {
   /* scroll-behavior: smooth; */
   font-size: 20px;
@@ -266,6 +321,7 @@ h2 {
   font-size: 54px;
   text-transform: uppercase;
   line-height: 1.2;
+  letter-spacing: -0.55px;
 }
 
 .flex {
@@ -274,8 +330,20 @@ h2 {
 .flex.row {
   flex-direction: row;
 }
+.flex.row-reverse {
+  flex-direction: row-reverse;
+}
 .flex.column {
   flex-direction: column;
+}
+.flex.column-reverse {
+  flex-direction: column-reverse;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.flex.nowrap {
+  flex-wrap: nowrap;
 }
 
 .accent {
