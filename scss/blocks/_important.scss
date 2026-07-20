@@ -16,6 +16,9 @@
           padding-right: 93px;
         }
       }
+      .ellipse {
+        left: 31px;
+      }
     }
     .string2 {
       width: 100%;
@@ -41,14 +44,25 @@
           }
         }
       }
+      .ellipse {
+        right: 191px;
+      }
     }
     
     img {
       align-self: baseline;
     }
-    figcaption {
-      font-size: 16px;
-      line-height: 144%;
+    figure {
+      position: relative;
+      figcaption {
+        font-size: 16px;
+        line-height: 144%;
+      }
+
+    }
+    .ellipse {
+      position: absolute;
+      bottom: -13px;
     }
   }
 }
