@@ -79,6 +79,12 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 54px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
 .flex {
   display: flex;
   &.row {
@@ -109,13 +115,17 @@ hr {
   z-index: -1;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
 .popup {
   align-items: center;
   position: sticky;
   left: 100px;
   top: 145px;
   width: 139px;
-  flex-direction: column;
+  z-index: 100;
   cursor: pointer;
   .pulse1 {
     height: 139px;
@@ -176,12 +186,14 @@ hr {
   height: 100vh;
   align-items: flex-end;
   justify-content: center;
+  pointer-events: none;
   .slider-block {
     position: relative;
     display: flex;
     bottom: -37.8%;
     margin: 0 auto;
     justify-content: center;
+    pointer-events: none;
     label {
       transform: rotate(-90deg);
       position: absolute;
@@ -193,6 +205,8 @@ hr {
       cursor: pointer;
       width: max-content;
       column-gap: 32px;
+      z-index: 9999;
+      pointer-events: auto;
       input {
         opacity: 0;
         width: 0;

@@ -1,6 +1,6 @@
 .hero {
   margin-top: -17px;
-  padding-bottom: 8.8rem;
+  padding-bottom: 8.7rem;
   .hero_block {
     h1 {
       font-size: 18px;
@@ -22,7 +22,7 @@
       margin-top: 0.5rem;
     }
     .guarantee {
-      margin-top: 4.1rem;
+      margin-top: 4.3rem;
       column-gap: 32px;
       .left {
         background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
@@ -35,9 +35,11 @@
       }
       .right {
         width: 40%;
+        row-gap: 10px;
         h2 {
           font-size: 18px;
           letter-spacing: 0.5px;
+          text-transform: none;
         }
         p {
           color: #00e0ff;
@@ -47,7 +49,7 @@
       }
     }
     button {
-      margin-top: 5.53rem;
+      margin-top: 5.4rem;
     }
   }
 }
