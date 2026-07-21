@@ -1,0 +1,17 @@
+<svg width="285" height="212" viewBox="0 0 285 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_177_1796" fill="white">
+<path d="M0 20C0 8.9543 8.95431 0 20 0H265C276.046 0 285 8.95431 285 20V192C285 203.046 276.046 212 265 212H20C8.9543 212 0 203.046 0 192V20Z"/>
+</mask>
+<path d="M0 20C0 8.9543 8.95431 0 20 0H265C276.046 0 285 8.95431 285 20V192C285 203.046 276.046 212 265 212H20C8.9543 212 0 203.046 0 192V20Z" fill="url(#paint0_linear_177_1796)" fill-opacity="0.11"/>
+<g clip-path="url(#paint1_diamond_177_1796_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_177_1796)"><g transform="matrix(-0.1355 0.0991613 -0.133306 -0.236643 142.5 106)"><rect x="0" y="0" width="1073.05" height="639.581" fill="url(#paint1_diamond_177_1796)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1073.05" height="639.581" transform="scale(1 -1)" fill="url(#paint1_diamond_177_1796)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1073.05" height="639.581" transform="scale(-1 1)" fill="url(#paint1_diamond_177_1796)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1073.05" height="639.581" transform="scale(-1)" fill="url(#paint1_diamond_177_1796)" opacity="1" shape-rendering="crispEdges"/></g></g><path d="M20 2H265V-2H20V2ZM283 20V192H287V20H283ZM265 210H20V214H265V210ZM2 192V20H-2V192H2ZM20 210C10.0589 210 2 201.941 2 192H-2C-2 204.15 7.84973 214 20 214V210ZM283 192C283 201.941 274.941 210 265 210V214C277.15 214 287 204.15 287 192H283ZM265 2C274.941 2 283 10.0589 283 20H287C287 7.84974 277.15 -2 265 -2V2ZM20 -2C7.84974 -2 -2 7.84973 -2 20H2C2 10.0589 10.0589 2 20 2V-2Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.28627452254295349,&#34;g&#34;:0.72549021244049072,&#34;b&#34;:0.90980392694473267,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.12156862020492554,&#34;g&#34;:0.30196088552474976,&#34;b&#34;:0.37647059559822083,&#34;a&#34;:0.43000000715255737},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:-271.0,&#34;m01&#34;:-266.61291503906250,&#34;m02&#34;:411.30645751953125,&#34;m10&#34;:198.32258605957031,&#34;m11&#34;:-473.28649902343750,&#34;m12&#34;:243.48196411132812},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" mask="url(#path-1-inside-1_177_1796)"/>
+<defs>
+<clipPath id="paint1_diamond_177_1796_clip_path"><path d="M20 2H265V-2H20V2ZM283 20V192H287V20H283ZM265 210H20V214H265V210ZM2 192V20H-2V192H2ZM20 210C10.0589 210 2 201.941 2 192H-2C-2 204.15 7.84973 214 20 214V210ZM283 192C283 201.941 274.941 210 265 210V214C277.15 214 287 204.15 287 192H283ZM265 2C274.941 2 283 10.0589 283 20H287C287 7.84974 277.15 -2 265 -2V2ZM20 -2C7.84974 -2 -2 7.84973 -2 20H2C2 10.0589 10.0589 2 20 2V-2Z"/></clipPath><linearGradient id="paint0_linear_177_1796" x1="142.5" y1="0" x2="142.5" y2="212" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E0FF"/>
+<stop offset="1" stop-color="#00E0FF" stop-opacity="0.49"/>
+</linearGradient>
+<linearGradient id="paint1_diamond_177_1796" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+<stop stop-color="#49B9E8"/>
+<stop offset="1" stop-color="#1F4D60" stop-opacity="0.43"/>
+</linearGradient>
+</defs>
+</svg>

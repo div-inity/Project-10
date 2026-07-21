@@ -1,0 +1,115 @@
+.parts {
+  padding-top: 5.4rem;
+  background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.39%, rgba(12, 55, 61, 0.8) 88.78%);
+  h2 {}
+  p {
+    font-size: 18px;
+    margin-top: 0.6rem;
+    letter-spacing: -0.06px;
+  }
+  .accordeon {
+    .accordeon-items {
+      margin-top: 1rem;
+      row-gap: 18px;
+      .item {
+        .open-accordeon {
+          align-items: center;
+          background: linear-gradient(286.41deg, #073447 3.8%, #08262b 92.54%);
+          border-radius: 6px;
+          padding-inline: 17px 15px;
+          padding-block: 13px;
+          .dot {
+            display: block;
+            width: 26px;
+            height: 26px;
+            background-image: url("../../img/Ellipse 5.svg");
+            background-position: center;
+            position: relative;
+            top: 6px;
+            right: 9px;
+          }
+          h3 {
+            font-size: 20px;
+            font-family: "font700";
+            margin-right: 7px;
+          }
+          .duration {
+            display: block;
+            font-size: 15px;
+            color: var(--accent2);
+            flex-grow: 2;
+            letter-spacing: -0.13px;
+            .devmark {
+              font-size: 13px;
+              line-height: 162%;
+              text-transform: uppercase;
+              color: #08262b;
+              background: #00e0ff;
+              padding-inline: 4px;
+              margin-left: 20px;
+            }
+          }
+          button.arrow {
+            background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
+            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            box-shadow: none;
+            background-image: url("../../img/Rectangle 11.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            transform: rotate(180deg);
+            &.active {
+              transform: rotate(0deg);
+            }
+          }
+        }
+        ol {
+          list-style: none; /* отключаем стандартные номера */
+          counter-reset: myCounter; /* сбрасываем счетчик */
+          row-gap: 34px;
+          margin-top: 1.6rem;
+          li {
+            counter-increment: myCounter; /* увеличиваем счетчик */
+            column-gap: 16px;
+            position: relative;
+            &::before {
+              content: counter(myCounter);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 26px;
+              height: 26px;
+              line-height: 0;
+              text-align: center;
+              border-radius: 50%;
+              background-color: #4abcec;
+              color: #08262b;
+              font-family: "font700";
+              font-size: 14px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .description {
+              margin-left: 42px;
+              h4 {
+                color: #4abcec;
+                font-size: 16px;
+                font-family: "font700";
+              }
+              p {
+                font-size: 16px;
+                line-height: 131%;
+                letter-spacing: -0.09px;
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  } 
+}

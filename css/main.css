@@ -137,9 +137,9 @@ header .header__content .phone span {
   width: 90%;
 }
 .reasons .reasons-items .items .item {
-  background-image: url("/img/Rectangle 4.png");
+  background-image: url("/img/Rectangle 4.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
   border-radius: 20px;
   padding-top: 36px;
@@ -334,6 +334,117 @@ header .header__content .phone span {
 }
 .why button {
   margin-top: 3.4rem;
+}
+
+.parts {
+  padding-top: 5.4rem;
+  background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.39%, rgba(12, 55, 61, 0.8) 88.78%);
+}
+.parts p {
+  font-size: 18px;
+  margin-top: 0.6rem;
+  letter-spacing: -0.06px;
+}
+.parts .accordeon .accordeon-items {
+  margin-top: 1rem;
+  row-gap: 18px;
+}
+.parts .accordeon .accordeon-items .item .open-accordeon {
+  align-items: center;
+  background: linear-gradient(286.41deg, #073447 3.8%, #08262b 92.54%);
+  border-radius: 6px;
+  padding-inline: 17px 15px;
+  padding-block: 13px;
+}
+.parts .accordeon .accordeon-items .item .open-accordeon .dot {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/Ellipse 5.svg");
+  background-position: center;
+  position: relative;
+  top: 6px;
+  right: 9px;
+}
+.parts .accordeon .accordeon-items .item .open-accordeon h3 {
+  font-size: 20px;
+  font-family: "font700";
+  margin-right: 7px;
+}
+.parts .accordeon .accordeon-items .item .open-accordeon .duration {
+  display: block;
+  font-size: 15px;
+  color: var(--accent2);
+  flex-grow: 2;
+  letter-spacing: -0.13px;
+}
+.parts .accordeon .accordeon-items .item .open-accordeon .duration .devmark {
+  font-size: 13px;
+  line-height: 162%;
+  text-transform: uppercase;
+  color: #08262b;
+  background: #00e0ff;
+  padding-inline: 4px;
+  margin-left: 20px;
+}
+.parts .accordeon .accordeon-items .item .open-accordeon button.arrow {
+  background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  box-shadow: none;
+  background-image: url("../../img/Rectangle 11.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+.parts .accordeon .accordeon-items .item .open-accordeon button.arrow.active {
+  transform: rotate(0deg);
+}
+.parts .accordeon .accordeon-items .item ol {
+  list-style: none; /* отключаем стандартные номера */
+  counter-reset: myCounter; /* сбрасываем счетчик */
+  row-gap: 34px;
+  margin-top: 1.6rem;
+}
+.parts .accordeon .accordeon-items .item ol li {
+  counter-increment: myCounter; /* увеличиваем счетчик */
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  position: relative;
+}
+.parts .accordeon .accordeon-items .item ol li::before {
+  content: counter(myCounter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  line-height: 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #4abcec;
+  color: #08262b;
+  font-family: "font700";
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.parts .accordeon .accordeon-items .item ol li .description {
+  margin-left: 42px;
+}
+.parts .accordeon .accordeon-items .item ol li .description h4 {
+  color: #4abcec;
+  font-size: 16px;
+  font-family: "font700";
+}
+.parts .accordeon .accordeon-items .item ol li .description p {
+  font-size: 16px;
+  line-height: 131%;
+  letter-spacing: -0.09px;
 }
 
 html {
