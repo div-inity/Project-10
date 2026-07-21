@@ -338,6 +338,7 @@ header .header__content .phone span {
 
 .parts {
   padding-top: 5.4rem;
+  padding-bottom: 5.3rem;
   background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.39%, rgba(12, 55, 61, 0.8) 88.78%);
 }
 .parts p {
@@ -408,6 +409,7 @@ header .header__content .phone span {
   counter-reset: myCounter; /* сбрасываем счетчик */
   row-gap: 34px;
   margin-top: 1.6rem;
+  margin-bottom: 1.7rem;
 }
 .parts .accordeon .accordeon-items .item ol li {
   counter-increment: myCounter; /* увеличиваем счетчик */
@@ -445,6 +447,9 @@ header .header__content .phone span {
   font-size: 16px;
   line-height: 131%;
   letter-spacing: -0.09px;
+}
+.parts .container > button {
+  margin-top: 2.6rem;
 }
 
 html {

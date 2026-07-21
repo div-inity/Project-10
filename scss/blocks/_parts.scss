@@ -1,7 +1,7 @@
 .parts {
   padding-top: 5.4rem;
+  padding-bottom: 5.3rem;
   background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.39%, rgba(12, 55, 61, 0.8) 88.78%);
-  h2 {}
   p {
     font-size: 18px;
     margin-top: 0.6rem;
@@ -71,6 +71,7 @@
           counter-reset: myCounter; /* сбрасываем счетчик */
           row-gap: 34px;
           margin-top: 1.6rem;
+          margin-bottom: 1.7rem;
           li {
             counter-increment: myCounter; /* увеличиваем счетчик */
             column-gap: 16px;
@@ -112,4 +113,7 @@
       }
     }
   } 
+  .container > button {
+    margin-top: 2.6rem;
+  }
 }
